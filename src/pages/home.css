@@ -10,6 +10,7 @@ body {
     background-color: #f9f9f9;
 }
 
+
 /* Home Container */
 .home {
   min-height: 100vh;
@@ -119,5 +120,136 @@ body {
 
   .part2 img {
     max-width: 500px;
+  }
+}
+
+/* Main Home Wrapper */
+.main-home {
+  background-color: #f9f9f9;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 1s ease-out;
+}
+
+.profile-desc {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeInLeft 1.2s ease-out 0.2s both;
+}
+
+.profile-desc h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.profile-desc h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff7a00;
+  margin-bottom: 20px;
+}
+
+.profile-desc p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Desktop View for Profile Section */
+@media (min-width: 768px) {
+  .profile-section {
+    flex-direction: row;
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .profile-desc {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .profile-desc h1 {
+    font-size: 3rem;
+  }
+
+  .profile-desc h2 {
+    font-size: 2rem;
+  }
+
+  .profile-desc p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .profile-pic img {
+    max-width: 350px;
   }
 }
