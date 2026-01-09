@@ -9,7 +9,7 @@ const Navigation = () => {
       <header className="top-nav">
         <div className="top-nav-container">
           <NavLink to="/" className="logo">
-            <img src="/chesswave.png" alt="ChessWave" className="logo-img" />
+            <img src="/logo.png" alt="ChessWave" className="logo-img" />
             <span className="logo-text">Rama Raju Chess Academy</span>
           </NavLink>
 

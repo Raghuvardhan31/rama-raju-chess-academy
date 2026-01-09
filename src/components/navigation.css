@@ -12,7 +12,6 @@ body {
 .top-nav {
   height: 56px;
   background: #fff ;
-  color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
@@ -42,7 +41,7 @@ body {
 }
 
 .logo-img {
-  height: 28px;  /* Matches your original font-size */
+  height: 50px;  /* Matches your original font-size */
   width: auto;
   font-weight: 700;  /* Not needed for img, but harmless */
 }
@@ -53,7 +52,7 @@ body {
 }
 
 .nav-item {
-  color: #e5e7eb;
+  color: #104bc1;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -62,7 +61,7 @@ body {
 }
 
 .nav-item.active {
-  color: #38bdf8;
+  color: #0f0f10;
 }
 
 /* ===== MAIN CONTENT ===== */
@@ -73,7 +72,7 @@ body {
 
 /* ===== BOTTOM NAV ===== */
 .bottom-nav {
-  height: 64px;
+  height: 55px;
   background: #020617;
   border-top: 1px solid #1e293b;
   position: fixed;
@@ -100,6 +99,7 @@ body {
 
 /* ===== DESKTOP ===== */
 @media (min-width: 768px) {
+
   .top-nav-links {
     display: flex;
   }
